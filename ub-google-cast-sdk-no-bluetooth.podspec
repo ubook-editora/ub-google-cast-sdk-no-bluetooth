@@ -23,7 +23,6 @@ Pod::Spec.new do |spec|
 
     spec.preserve_paths       = "GoogleCast.xcframework"
     spec.vendored_frameworks  = "GoogleCast.xcframework"
-    spec.source_files         = "GoogleCast.xcframework/ios-arm64/GoogleCast.framework/Headers/**/*.h"
 
     spec.frameworks = "Accelerate", "AudioToolbox", "AVFoundation", "CFNetwork", "CoreData", "CoreGraphics", "CoreMedia", "CoreText", "Foundation", "MediaAccessibility", "MediaPlayer", "QuartzCore", "Security", "SystemConfiguration", "UIKit"
     spec.libraries  = "c++"
