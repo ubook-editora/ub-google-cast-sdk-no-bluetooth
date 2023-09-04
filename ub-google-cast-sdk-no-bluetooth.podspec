@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
     spec.homepage     = "https://developers.google.com/cast/"
     spec.license      = { :type => "Commercial", :text => "https://developers.google.com/terms/" }
     spec.authors      = "Google Inc."
-    spec.source       = { :http => "https://ubook-mobile.s3.amazonaws.com/vendor/GoogleCast/GoogleCast.xcframework.zip" }
+    spec.source       = { :http => "https://ubook-mobile.s3.amazonaws.com/vendor/GoogleCast/GoogleCast.tar.gz" }
 
     spec.ios.deployment_target = "13.0"
 
