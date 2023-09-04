@@ -17,12 +17,13 @@ Pod::Spec.new do |spec|
     spec.homepage     = "https://developers.google.com/cast/"
     spec.license      = { :type => "Commercial", :text => "https://developers.google.com/terms/" }
     spec.authors      = "Google Inc."
-    spec.source       = { :http => "https://dl.google.com/dl/chromecast/sdk/ios/GoogleCastSDK-ios-no-bluetooth-4.8.0_dynamic_xcframework.zip" }
+    spec.source       = { :http => "https://ubook-mobile.s3.amazonaws.com/vendor/GoogleCast/GoogleCast.xcframework.zip" }
 
     spec.ios.deployment_target = "13.0"
 
-    spec.vendored_frameworks  = "GoogleCastSDK-ios-4.8.0_dynamic_xcframework/GoogleCast.xcframework"
-    spec.preserve_paths       = "GoogleCastSDK-ios-4.8.0_dynamic_xcframework"
+    spec.preserve_paths       = "GoogleCast.xcframework"
+    spec.vendored_frameworks  = "GoogleCast.xcframework"
+    spec.source_files         = 'GoogleCast.xcframework/ios-arm64/GoogleCast.framework/Headers/**/*.h'
 
     spec.frameworks = "Accelerate", "AudioToolbox", "AVFoundation", "CFNetwork", "CoreData", "CoreGraphics", "CoreMedia", "CoreText", "Foundation", "MediaAccessibility", "MediaPlayer", "QuartzCore", "Security", "SystemConfiguration", "UIKit"
     spec.libraries  = "c++"
