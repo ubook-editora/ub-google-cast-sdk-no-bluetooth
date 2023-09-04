@@ -21,10 +21,8 @@ Pod::Spec.new do |spec|
 
     spec.ios.deployment_target = "13.0"
 
-    spec.preserve_paths       = "GoogleCastSDK-ios-4.8.0_dynamic_xcframework/GoogleCast.xcframework"
-    spec.resources            = "GoogleCastSDK-ios-4.8.0_dynamic_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastCoreResources.bundle", "GoogleCast.xcframework/ios-arm64/GoogleCast.framework/GoogleCastUIResources.bundle"
     spec.vendored_frameworks  = "GoogleCastSDK-ios-4.8.0_dynamic_xcframework/GoogleCast.xcframework"
-    spec.source_files         = 'GoogleCastSDK-ios-4.8.0_dynamic_xcframework/GoogleCast.xcframework/ios-arm64/GoogleCast.framework/Headers/**/*.h'
+    spec.preserve_paths       = "GoogleCastSDK-ios-4.8.0_dynamic_xcframework"
 
     spec.frameworks = "Accelerate", "AudioToolbox", "AVFoundation", "CFNetwork", "CoreData", "CoreGraphics", "CoreMedia", "CoreText", "Foundation", "MediaAccessibility", "MediaPlayer", "QuartzCore", "Security", "SystemConfiguration", "UIKit"
     spec.libraries  = "c++"
