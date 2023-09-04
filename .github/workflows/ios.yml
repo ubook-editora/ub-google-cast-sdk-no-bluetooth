@@ -1,0 +1,24 @@
+name: iOS
+
+on:
+  push:
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - 'extras/images/**'
+
+jobs:
+  build:
+    name: ${{ matrix.config.name }}
+    runs-on: ${{ matrix.config.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        config:
+        - { name: "macOS Latest", os: macos-13 }
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Test
+        run: ./build.sh
