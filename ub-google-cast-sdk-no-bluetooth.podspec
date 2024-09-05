@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "ub-google-cast-sdk-no-bluetooth"
-    spec.version      = "4.8.0"
+    spec.version      = "4.8.3"
     spec.summary      = "Framework for casting content to Google Cast devices with no Bluetooth requirements (dynamically linked version)"
     spec.description  = <<-DESC
   Google Cast is a screen-sharing technology that lets a user send and
@@ -31,4 +31,5 @@ Pod::Spec.new do |spec|
 
     spec.requires_arc = true
     spec.static_framework = true
+    spec.swift_versions = ["5"]
   end
