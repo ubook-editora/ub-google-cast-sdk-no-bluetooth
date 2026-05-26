@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name         = "ub-google-cast-sdk-no-bluetooth"
-    spec.version      = "4.8.3"
+    spec.version      = "4.8.4"
     spec.summary      = "Framework for casting content to Google Cast devices with no Bluetooth requirements (dynamically linked version)"
     spec.description  = <<-DESC
   Google Cast is a screen-sharing technology that lets a user send and
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
     spec.authors      = "Google Inc."
     spec.source       = { :git => 'https://github.com/ubook-editora/ub-google-cast-sdk-no-bluetooth.git', :tag => spec.version.to_s }
 
-    spec.ios.deployment_target = "13.0"
+    spec.ios.deployment_target = "15.0"
 
     spec.preserve_paths       = "GoogleCast.xcframework"
     spec.vendored_frameworks  = "GoogleCast.xcframework"
@@ -27,9 +27,6 @@ Pod::Spec.new do |spec|
     spec.frameworks = "Accelerate", "AudioToolbox", "AVFoundation", "CFNetwork", "CoreData", "CoreGraphics", "CoreMedia", "CoreText", "Foundation", "MediaAccessibility", "MediaPlayer", "QuartzCore", "Security", "SystemConfiguration", "UIKit"
     spec.libraries  = "c++"
 
-    spec.dependency "Protobuf", "~> 3.13"
-
     spec.requires_arc = true
-    spec.static_framework = true
     spec.swift_versions = ["5"]
   end
